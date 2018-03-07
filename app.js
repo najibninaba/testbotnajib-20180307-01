@@ -43,7 +43,7 @@ bot.on('conversationUpdate', function (message) {
             if (identity.id === message.address.bot.id) {
                 // bot.beginDialog(message.address, '/');
                 var msg = new builder.Message().address(message.address);
-                msg.text('Hello, I am an EchoBot. How may I help you? I will echo back whatever you say to me!');
+                msg.text('Hello, I am an EchoBot Version 20180307-01. How may I help you? I will echo back whatever you say to me!');
                 msg.textLocale('en-US');
                 bot.send(msg);
             }
